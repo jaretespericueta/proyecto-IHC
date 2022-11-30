@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosjimmy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <title>Ejercicios Jimmy Neutron</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">PLAYER ITEMS</h2>
+            <nav>
+                <a href="index.html" class="activo">Inicio</a>
+                <a href="series.html">Series</a>
+                <a href="peliculas.html">Películas</a>
+                <a href="niños.html">Niños</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Jimmy Neutron</h1>
+    <div class="temp">
+        <h2>Temporada 1 - Capítulo 1</h2>
+    </div>
+
+    <div id="pantalla-inicial">
+        <p>Adivina el personaje</p>
+        <button class="btn" onclick="comenzarJuego()">Iniciar Ejercicio</button>
+    </div>
+
+        <div class="pantalla-juego" id="pantalla-juego">
+
+            <img src="img/Jimmy.png" alt="" id="imgJimmy"> 
+            <div class="opciones">
+                <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                    <div class="letra" id="l0">A</div>
+                    <div class="nombre" id="n0">OPCION 1</div>
+                </div>
+                <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                    <div class="letra" id="l1">B</div>
+                    <div class="nombre" id="n1">OPCION 2</div>
+                </div>
+                <div class="opcion" id="op3" onclick="comprobarRespuesta(2)">
+                    <div class="letra" id="l2">C</div>
+                    <div class="nombre" id="n2">OPCION 3</div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="pantalla-final">
+            <h2>Respuestas correctas: <span id="numCorrectas">3</span></h2>
+            <h2>Respuestas incorrectas: <span id="numIncorrectas">2</span></h2>
+                <button class="btn" onclick="volverAlInicio()">Volver a la lista de ejercicios</button>
+        </div>
+
+    <script src="https://kit.fontawesome.com/c2357e4d9f.js" crossorigin="anonymous"></script>
+    <script src="ejercicio.js"></script>
+</body>
+</html>
